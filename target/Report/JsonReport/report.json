@@ -1,0 +1,462 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-26T04:15:18.101Z",
+        "before": [
+          {
+            "result": {
+              "duration": 271000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetAllProductsSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetProductIDSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.DeleteproductSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.CreateNewProductSteps.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "To validate create product by using valid data",
+        "description": "",
+        "id": "validate-creation-of-new-product;to-validate-create-product-by-using-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I create product by using create new product API",
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.CreateNewProductSteps.i_create_product_by_using_create_new_product_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1007000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I provide valid data for product creation",
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.CreateNewProductSteps.i_provide_valid_data_for_product_creation(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "type",
+                  "price",
+                  "shipping",
+                  "upc",
+                  "description",
+                  "manufacturer",
+                  "model",
+                  "url",
+                  "image"
+                ]
+              },
+              {
+                "cells": [
+                  "iPhone SE",
+                  "Phone",
+                  "30000",
+                  "3000",
+                  "RT500",
+                  "Test",
+                  "Apple",
+                  "SE",
+                  "apple.com",
+                  "Image"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 370000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I store id of the product",
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.CreateNewProductSteps.i_store_id_of_the_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I validate status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 23
+                }
+              ],
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.CreateNewProductSteps.i_validate_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate creation of new product",
+    "description": "  I want to validate the creation of new product",
+    "id": "validate-creation-of-new-product",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/F1_CreateProduct.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-26T04:15:19.951Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetAllProductsSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetProductIDSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.DeleteproductSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.CreateNewProductSteps.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "To validate get details of product as per id provided",
+        "description": "",
+        "id": "validate-get-specific-product-functionality;to-validate-get-details-of-product-as-per-id-provided;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have the id of the product whose details are to be fetched",
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetProductIDSteps.i_have_the_id_of_the_product_whose_details_are_to_be_fetched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get the product details as per given id",
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetProductIDSteps.i_get_the_product_details_as_per_given_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get details of product along with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 51
+                }
+              ],
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetProductIDSteps.i_get_details_of_product_along_with_status_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate get specific product functionality",
+    "description": "  I want to get the details of product as per provided product id",
+    "id": "validate-get-specific-product-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/F2_GetSpecificProduct.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-26T04:15:19.977Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetAllProductsSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetProductIDSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.DeleteproductSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.CreateNewProductSteps.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "To validate delete product functionality as per given id",
+        "description": "",
+        "id": "validate-delete-product-functionality;to-validate-delete-product-functionality-as-per-given-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have the id of the product to be deleted",
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.DeleteproductSteps.i_have_the_id_of_the_product_to_be_deleted()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I post delete request to delete request API endpoint",
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.DeleteproductSteps.i_post_delete_request_to_delete_request_api_endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I validate response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.DeleteproductSteps.i_validate_response_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate Delete product functionality",
+    "description": "  I want to delete the product as per id passed",
+    "id": "validate-delete-product-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/F3_DeleteProduct.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-26T04:15:20.000Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetAllProductsSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetProductIDSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.DeleteproductSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.CreateNewProductSteps.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "To validate get order feature with valid data for 10 products",
+        "description": "",
+        "id": "validate-get-all-product-functionality;to-validate-get-order-feature-with-valid-data-for-10-products;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I want to get details of 10 products",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 25
+                }
+              ],
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetAllProductsSteps.i_want_to_get_details_of_products(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 163000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get the products details of 10 products using Get all product API endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 30
+                }
+              ],
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetAllProductsSteps.i_get_the_products_details_of_products_using_get_all_product_api_endpoint(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I validate status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 26
+                }
+              ],
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetAllProductsSteps.i_validate_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I validate product count as 51958",
+            "match": {
+              "arguments": [
+                {
+                  "val": "51958",
+                  "offset": 28
+                }
+              ],
+              "location": "com.bestbuy.RestAssuredCucumber.stepDefinition.GetAllProductsSteps.i_validate_product_count_as(int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validate get all product functionality",
+    "description": "  I want to get first 10 orders from using this feature",
+    "id": "validate-get-all-product-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/F4_GetAllProduct.feature",
+    "tags": []
+  }
+]

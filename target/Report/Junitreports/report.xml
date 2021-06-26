@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="2.228">
+<testcase classname="Validate creation of new product" name="To validate create product by using valid data" time="1.842">
+<system-out><![CDATA[Given I create product by using create new product API......................passed
+When I provide valid data for product creation..............................passed
+And I store id of the product...............................................passed
+Then I validate status code 201.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate get specific product functionality" name="To validate get details of product as per id provided" time="0.022">
+<system-out><![CDATA[Given I have the id of the product whose details are to be fetched..........passed
+When I get the product details as per given id..............................passed
+Then I get details of product along with status code as 200.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Delete product functionality" name="To validate delete product functionality as per given id" time="0.02">
+<system-out><![CDATA[Given I have the id of the product to be deleted............................passed
+When I post delete request to delete request API endpoint...................passed
+Then I validate response code as 200........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate get all product functionality" name="To validate get order feature with valid data for 10 products" time="0.208">
+<system-out><![CDATA[Given I want to get details of 10 products..................................passed
+When I get the products details of 10 products using Get all product API endpoint.passed
+Then I validate status code as 200..........................................passed
+And I validate product count as 51958.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
